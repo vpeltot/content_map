@@ -1,0 +1,9 @@
+content_map.settings:
+  path: '/admin/config/system/content-map'
+  defaults:
+    _controller: 'Drupal\content_map\Controller\ContentMapController::viewMap'
+    _title: 'Content Map'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'view content map'

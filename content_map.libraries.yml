@@ -1,0 +1,21 @@
+viz-js:
+  remote: https://github.com/mdaines/viz.js
+  version: 1.4.4
+  license:
+    name: MIT
+    url: https://github.com/mdaines/viz.js/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    https://github.com/mdaines/viz.js/releases/download/v1.7.0/viz-lite.js: { type: external, minified: true }
+
+content-map-js:
+  js:
+    js/content_map.js: {}
+  dependencies:
+    - content_map/viz-js
+    - core/jquery
+
+content-map-css:
+  css:
+    theme:
+      css/content_map.css: {}
